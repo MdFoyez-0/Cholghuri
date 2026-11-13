@@ -1,0 +1,7 @@
+Always refer to `GSD_CONTEXT.md` for project context and standards.
+
+- Tech Stack: PHP 8.x, Tailwind CSS, Vanilla JS, MySQL.
+- Security: Use `verify_csrf()` on all forms. Always use prepared statements (`$stmt->bind_param()`) for SQL queries.
+- UI Design: Use premium, responsive Tailwind CSS components. Avoid raw CSS when Tailwind utility classes suffice.
+- Links: Use the `BASE_URL` defined in `config/config.php` for static assets and navigation.
+- Forms: Handle XSS by escaping output using `htmlspecialchars()`.

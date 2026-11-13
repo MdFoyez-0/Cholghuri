@@ -1,0 +1,52 @@
+# ==========================================
+# CholoGhuri 2.0 - .gitignore
+# ==========================================
+
+# IMPORTANT: Database config contains passwords — never push this
+config/database.php
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Rate limiting temp files (generated at runtime)
+/tmp/
+/temp/
+
+# PHP logs
+*.log
+error_log
+php_error.log
+
+# SQL backups
+*.sql.gz
+*.sql.bak
+*.zip
+*.bak
+*.old
+
+# User uploads (keep directory placeholders only)
+uploads/*
+!uploads/.htaccess
+!uploads/.gitkeep
+
+# OS generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE & Editor folders
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node modules (if added later)
+node_modules/
+npm-debug.log*
+
+# Composer (if added later)
+/vendor/

@@ -1,0 +1,11 @@
+Options -Indexes
+
+# Do not serve source-control metadata, local configuration, backups, or project docs.
+<FilesMatch "(?i)(^\.|~$|\.(env|ini|log|sql|bak|old|orig|swp|dist|map|zip|tar|gz|backup|dump|save|tmp|phps)$|^(README|SECURITY)(\.|$))">
+    Require all denied
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule (^|/)\. - [F,L]
+</IfModule>

@@ -1,0 +1,34 @@
+# CholoGhuri - Git line ending normalization
+# Ensures consistent LF line endings in the repo regardless of OS
+
+* text=auto
+
+# PHP files - always LF
+*.php text eol=lf
+
+# Web files - always LF
+*.html text eol=lf
+*.css  text eol=lf
+*.js   text eol=lf
+*.json text eol=lf
+*.md   text eol=lf
+*.txt  text eol=lf
+*.sql  text eol=lf
+*.xml  text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.htaccess text eol=lf
+
+# Binary files - no conversion
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.svg  binary
+*.woff binary
+*.woff2 binary
+*.ttf  binary
+*.eot  binary
+*.zip  binary
+*.pdf  binary
